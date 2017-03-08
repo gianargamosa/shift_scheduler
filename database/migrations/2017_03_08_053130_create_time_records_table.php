@@ -13,14 +13,14 @@ class CreateTimeRecordsTable extends Migration
      */
     public function up()
     {
-        // Schema::create('time_records', function (Blueprint $table) {
-        //     $table->increments('id');
-        //     $table->string('user_id');
-        //     $table->string('time_in');
-        //     $table->string('time_out');
-        //     $table->string('remarks');
-        //     $table->timestamps();
-        // });
+        Schema::create('time_records', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id');
+            $table->string('time_in');
+            $table->string('time_out');
+            $table->string('remarks');
+            $table->timestamps();
+        });
     }
 
     /**

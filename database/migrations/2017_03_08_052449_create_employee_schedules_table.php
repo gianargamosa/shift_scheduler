@@ -13,14 +13,14 @@ class CreateEmployeeSchedulesTable extends Migration
      */
     public function up()
     {
-        // Schema::create('employee_schedules', function (Blueprint $table) {
-        //     $table->increments('id');
-        //     $table->integer('user_id');
-        //     $table->string('department');
-        //     $table->string('position');
-        //     $table->string('shift_schedule');
-        //     $table->timestamps();
-        // });
+        Schema::create('employee_schedules', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('user_id');
+            $table->string('department');
+            $table->string('position');
+            $table->string('shift_schedule');
+            $table->timestamps();
+        });
     }
 
     /**
