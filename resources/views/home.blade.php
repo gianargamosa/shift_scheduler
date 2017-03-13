@@ -14,10 +14,11 @@
                                 <th>Date</th>
                                 <th>Time In</th>
                                 <th>Time Out</th>
-                                <th>Action</th>
+                                <th>Total Hours/Action</th>
                             </tr>
                         </thead>
                         <tbody>
+                        
                             @foreach($time_record as $record)
                             <tr>
                                 <th scope="row">

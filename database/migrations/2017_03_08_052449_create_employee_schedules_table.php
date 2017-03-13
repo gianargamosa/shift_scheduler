@@ -18,7 +18,8 @@ class CreateEmployeeSchedulesTable extends Migration
             $table->integer('user_id');
             $table->string('department');
             $table->string('position');
-            $table->string('shift_schedule');
+            $table->string('shift_schedule_in');
+            $table->string('shift_schedule_out');        
             $table->timestamps();
         });
     }

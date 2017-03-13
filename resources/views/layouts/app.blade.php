@@ -63,6 +63,9 @@
                                         <li><a href="/employee">Settings</a></li>
                                     </li>
                                     <li>
+                                        <li><a href="/employee/add_shift_sched">Shifting Information</a></li>
+                                    </li>
+                                    <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -24,6 +24,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/employee', 'EmployeesController@index');
 Route::get('/employee/add_shift_sched', 'EmployeesController@add_shift_sched');
+Route::get('/employee/timesheet/{id}', 'EmployeesController@timesheet');
+
 Route::post('/employee/update', function(Request $request) {
   $user = Auth::user();
   $user->update($request->all());
